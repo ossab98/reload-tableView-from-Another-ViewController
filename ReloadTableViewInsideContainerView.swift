@@ -63,12 +63,6 @@ class LessonController: UIViewController {
     func reloadLessonData(lesson: [Lesson]){
         self.lessons = lesson
         self.tableView.reloadData()
-        
-        if lesson.count <= 0 {
-            self.noResultsLabel.isHidden = false
-        }else{
-            self.noResultsLabel.isHidden = true
-        }
     }
     
     
